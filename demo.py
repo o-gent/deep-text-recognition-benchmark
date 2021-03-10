@@ -6,11 +6,10 @@ import torch.backends.cudnn as cudnn
 import torch.utils.data
 import torch.nn.functional as F
 
-from utils import CTCLabelConverter, AttnLabelConverter
-from dataset import RawDataset, AlignCollate
-from model import Model
+from deeptext.utils import CTCLabelConverter, AttnLabelConverter
+from deeptext.dataset import RawDataset, AlignCollate
+from deeptext.model import Model
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
 
 def demo(opt):
     """ model configuration """

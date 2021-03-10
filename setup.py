@@ -16,9 +16,9 @@ setuptools.setup(
     url='https://github.com/o-gent/deeptext',
     author='ogent',
     install_requires=[
-        'pymavlink>=2.2.20',
+        "torch"
     ],
-    author_email='',
+    author_email='ogent',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
